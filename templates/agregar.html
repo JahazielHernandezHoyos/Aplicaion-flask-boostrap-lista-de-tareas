@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+    <main class="container mx-auto">
+        <h1 class="text-center py-5">Agregar Tareas</h1>
+            <form action="{{ url_for('agregar') }}" method="post">
+                        <div class="col-md-7 container mx-auto">
+                                <label for="tarea">Actividades</label>
+                                <input type="text" class= "form-control row container-fluid" name="tarea" placeholder="agregar nueva tarea">
+                                <small class="form-text text-muted ">*tus actividades se borraran al reiniciar la pagina por que no se vincular aun un sql con flask</small>
+                        </div>
+                        <div class="text-center col-md-7 container mx-auto py-5">
+                                <button class="text-center btn btn-primary mx-auto">Agregar</button>
+                            </form>
+                        </div>
+                        
+            
+
+        </form>
+    </main>
+
+
+{% endblock %}
